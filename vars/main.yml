@@ -1,0 +1,14 @@
+---
+install_files:
+  - owner:              'root'
+    group:              'root'
+    mode:               '0644'
+    src:                'files/conf/cron.d/darken_leds'
+    dest:               '/etc/cron.d/darken_leds'
+shell_commands_ignore_result:
+  - user:               'root'
+    chdir:              '/'
+    command:            echo 0 > /sys/class/leds/led1/brightness
+  - user:               'root'
+    chdir:              '/'
+    command:            echo 0 > /sys/class/leds/led0/brightness
