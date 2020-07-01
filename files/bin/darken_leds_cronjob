@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/local/bin/darken_leds > /var/log/darken_leds.log 2>&1
+echo $? > /var/log/darken_leds.ret

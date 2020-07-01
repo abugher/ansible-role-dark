@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tee /sys/class/leds/led1/brightness <<< 0
+tee /sys/class/leds/led0/brightness <<< 0

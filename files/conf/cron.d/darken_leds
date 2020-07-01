@@ -1,4 +1,2 @@
 # m     h       dom     mon     dow     user    command
-00      00      *       *       *       root    /usr/local/bin/update_debian_cronjob
-@reboot                                 root    tee /sys/class/leds/led1/brightness <<< 0
-@reboot                                 root    tee /sys/class/leds/led0/brightness <<< 0
+@reboot                                 root    /usr/local/bin/darken_leds_cronjob
