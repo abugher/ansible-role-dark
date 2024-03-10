@@ -15,7 +15,7 @@ install_files:
     mode:               '0755'
     src:                'files/bin/darken_leds'
     dest:               '/usr/local/bin/darken_leds'
-shell_commands_ignore_result:
+shell_commands_ignore_change:
   - user:               'root'
     chdir:              '/'
     command:            echo 0 > /sys/class/leds/led1/brightness

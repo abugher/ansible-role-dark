@@ -1,3 +1,3 @@
 ---
 - include_tasks:        '../../tasks/install_files.yml'
-- include_tasks:        '../../tasks/shell_commands_ignore_result.yml'
+- include_tasks:        '../../tasks/shell_commands_ignore_change.yml'
